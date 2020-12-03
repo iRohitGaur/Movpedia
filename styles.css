@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Monoton&display=swap');
+
+:root {
+    --primaryColor: #e50914;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(images/theatre.jpg) center center / cover no-repeat fixed;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.close {
+    margin: auto;
+    padding-top: 20px;
+    width: 100%;
+    text-align: right;
+    vertical-align: top;
+}
+
+#close {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-size: 2rem;
+}
+
+.back {
+    margin: auto;
+    padding-top: 20px;
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+}
+
+#back {
+    background-color: transparent;
+    margin: 0rem 1rem;
+    border: none;
+    color: black;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+#main-content-holder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 95%;
+}
+
+/** container **/
+.container {
+    padding: 0rem;
+}
+
+.container-center {
+    max-width: 90%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-center-main {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    font-size: 3.5rem;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.input-div {
+    margin-top: 2rem;
+    margin: auto;
+    width: 90%;
+    max-width: 20rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-text {
+    padding: 0.5rem;
+    max-width: 300px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+#movie-search {
+    background-color: var(--primaryColor);
+    color: white;
+    padding: 0.5rem;
+    max-width: 450px;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+#mov-detail {
+    width: 80%;
+}
+
+.row {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    width: 260px;
+    height: 300px;
+    background-color: white;
+    border-radius: 12px;
+    align-items: end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#open-movie-detail {
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.movie-info {
+    max-width: 100%;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.movie-info-p {
+    font-size: 90%;
+    width: 100%;
+    color: gray;
+}
+
+.movie-img-div {
+    width: 100%;
+    height: 70%;
+    text-align: center;
+}
+
+.movie-img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.movie-detail {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    justify-content: space-around;
+    color: gray;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.movie-poster {
+    height: 90%;
+    width: fit-content;
+    margin: 1rem;
+}
+
+.movie-data-texts {
+    max-width: 400px;
+    margin: 0.5rem;
+}
+
+.movie-data-text {
+    margin: 0.5rem;
+}
+
+.movie-data-text .header {
+    color: black;
+    width: 80px;
+    font-size: 90%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #d22f27;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+  
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+    body {
+      /* The file size of this background image is 93% smaller
+       * to improve page load speed on mobile internet connections */
+      background-image: url(images/theatre-mobile.jpg);
+    }
+}
